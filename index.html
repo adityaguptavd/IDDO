@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>IDDO</title>
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.17/jquery.bxslider.css">
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <div class="row align-center">
+                    <div class="col-2 col-m-6">
+                        <h1><a href="">IDDO</a></h1>
+                    </div>
+                    <div class="col-10 col-m-6">
+                        <div class="flex justify-end">
+                            <button class="rounded-btn menu hidden"><span></span><span></span><span></span></button>
+                        </div>
+                        <div class="flex align-center justify-space-between nav-box">
+                            <nav>
+                                <ul class="flex">
+                                    <li><a href="#home">Home</a></li>
+                                    <li><a href="#services">Services</a></li>
+                                    <li><a href="#works">Portfolio</a></li>
+                                    <li><a href="#about">About</a></li>
+                                    <li><a href="#contact">Contact</a></li>
+                                </ul>
+                            </nav>
+                            <button class="rounded-btn signup">Sign up</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="signup-popup">
+            <div class="overlay hidden"></div>
+            <div class="popup hidden">
+                <button class="close"><span class="fa fa-times-circle"></span></button>
+                <form>
+                    <div class="formgrid">
+                        <div><label>Name: <input type="text" name="name" minlength="3" required></label></div>
+                        <div><label >Email: <input type="email" name="email" required></label></div>
+                        <div><label>Phone: <input type="tel" name="phone" required></label></div>
+                        <div><label>Password: <input type="password" name="password" required></label></div>
+                        <div><button class="rounded-btn">Submit</button></div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="banner" role="banner" id="home">
+            <div class="container">
+                <div class="flex align-center">
+                    <div>
+                        <button class="fa fa-play-circle-o"></button>
+                    </div>
+                    <div>
+                        <p>Let me show you a few things.</p>
+                        <a href="">Click to play video</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="banner-player">
+            <div class="overlay hidden"></div>
+            <div class="popup hidden">
+            </div>
+        </div>
+        <section class="services" id="services">
+            <div class="container">
+                <div class="row">
+                    <div class="col-4 col-t-6 col-p-12">
+                        <h2>Our Services.</h2>
+                    </div>
+                    <div class="col-8 col-t-12">
+                        <div class="grid">
+                            <div class="flex align-center">
+                                <div class="icon">
+                                    <span class="fa fa-cloud"></span>
+                                </div>
+                                <div class="feature">
+                                    <h3>Feature 1</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, dignissimos.</p>
+                                </div>
+                            </div>
+                            <div class="flex align-center">
+                                <div class="icon">
+                                    <span class="fa fa-cutlery"></span>
+                                </div>
+                                <div class="feature">
+                                    <h3>Feature 2</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, dignissimos.</p>
+                                </div>
+                            </div>
+                            <div class="flex align-center">
+                                <div class="icon">
+                                    <span class="fa fa-bolt"></span>
+                                </div>
+                                <div class="feature">
+                                    <h3>Feature 3</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, dignissimos.</p>
+                                </div>
+                            </div>
+                            <div class="flex align-center">
+                                <div class="icon">
+                                    <span class="fa fa-gavel"></span>
+                                </div>
+                                <div class="feature">
+                                    <h3>Feature 4</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, dignissimos.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="icons-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-2 col-p-4">
+                        <span class="fa fa-lightbulb-o"></span>
+                    </div>
+                    <div class="col-2 col-p-4">
+                        <span class="fa fa-globe"></span>
+                    </div>
+                    <div class="col-2 col-p-4">
+                        <span class="fa fa-camera-retro"></span>
+                    </div>
+                    <div class="col-2 col-p-4">
+                        <span class="fa fa-wrench"></span>
+                    </div>
+                    <div class="col-2 col-p-4">
+                        <span class="fa fa-microphone"></span>
+                    </div>
+                    <div class="col-2 col-p-4">
+                        <span class="fa fa-money"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="works" id="works">
+            <div class="container">
+                <div class="row">
+                    <div class="col-4 col-t-6 col-p-12">
+                        <h2>Our Works.</h2>
+                        <div class="btn-container flex">
+                            <button class="rounded-btn active">All</button>
+                            <button class="rounded-btn">Website</button>
+                            <button class="rounded-btn">Branding</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-4 col-t-6 col-p-12 all web">
+                        <div class="project">
+                            <img src="img/work-image.webp" alt="" loading="lazy">
+                            <div class="caption">
+                                <h3>Project Name</h3>
+                                <p>designed by Aditya | Dec 5, 2024</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 col-t-6 col-p-12 all web">
+                        <div class="project">
+                            <img src="img/work-image.webp" alt="" loading="lazy">
+                            <div class="caption">
+                                <h3>Project Name</h3>
+                                <p>designed by Aditya | Dec 5, 2024</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 col-t-6 col-p-12 all web">
+                        <div class="project">
+                            <img src="img/work-image.webp" alt="" loading="lazy">
+                            <div class="caption">
+                                <h3>Project Name</h3>
+                                <p>designed by Aditya | Dec 5, 2024</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 col-t-6 col-p-12 all branding">
+                        <div class="project">
+                            <img src="img/work-image.webp" alt="" loading="lazy">
+                            <div class="caption">
+                                <h3>Project Name</h3>
+                                <p>designed by Aditya | Dec 5, 2024</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 col-t-6 col-p-12 all branding">
+                        <div class="project">
+                            <img src="img/work-image.webp" alt="" loading="lazy">
+                            <div class="caption">
+                                <h3>Project Name</h3>
+                                <p>designed by Aditya | Dec 5, 2024</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 col-t-6 col-p-12 all branding">
+                        <div class="project">
+                            <img src="img/work-image.webp" alt="" loading="lazy">
+                            <div class="caption">
+                                <h3>Project Name</h3>
+                                <p>designed by Aditya | Dec 5, 2024</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 col-t-6 col-p-12 hidden">
+                        <div class="project">
+                            <img src="img/work-image.webp" alt="" loading="lazy">
+                            <div class="caption">
+                                <h3>Project Name</h3>
+                                <p>designed by Aditya | Dec 5, 2024</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 col-t-6 col-p-12 hidden">
+                        <div class="project">
+                            <img src="img/work-image.webp" alt="" loading="lazy">
+                            <div class="caption">
+                                <h3>Project Name</h3>
+                                <p>designed by Aditya | Dec 5, 2024</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 col-t-6 col-p-12 hidden">
+                        <div class="project">
+                            <img src="img/work-image.webp" alt="" loading="lazy">
+                            <div class="caption">
+                                <h3>Project Name</h3>
+                                <p>designed by Aditya | Dec 5, 2024</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div><button class="plus-btn"><span class="fa fa-plus-circle"></span></button></div>
+            </div>
+        </section>
+        <div class="reviews-container" id="reviews">
+            <div class="container">
+                <div class="row">
+                    <!-- To capture first 2 columns gap -->
+                    <div class="col-2"></div>
+                    <!-- Reviews -->
+                     <div class="col-8 col-t-12">
+                        <div class="reviews">
+                            <div class="review">
+                                <blockquote>
+                                    <p><q>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum saepe, quibusdam doloribus quisquam, alias officia fugit qui aperiam quod beatae, ab incidunt! Necessitatibus minus eveniet maxime tenetur iusto, vitae inventore!</q></p></blockquote>
+                                <figure>
+                                    <img src="img/jack.webp" alt="jack" width="70" height="70" loading="lazy">
+                                    <figcaption>JACK EFRON</figcaption>
+                                </figure>
+                            </div>
+                            <div class="review">
+                                <blockquote>
+                                    <p><q>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum saepe, quibusdam doloribus quisquam, alias officia fugit qui aperiam quod beatae, ab incidunt! Necessitatibus minus eveniet maxime tenetur iusto, vitae inventore!</q></p></blockquote>
+                                <figure>
+                                    <img src="img/jack.webp" alt="jack" width="70" height="70" loading="lazy">
+                                    <figcaption>JACK EFRON</figcaption>
+                                </figure>
+                            </div>
+                            <div class="review">
+                                <blockquote>
+                                    <p><q>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum saepe, quibusdam doloribus quisquam, alias officia fugit qui aperiam quod beatae, ab incidunt! Necessitatibus minus eveniet maxime tenetur iusto, vitae inventore!</q></p></blockquote>
+                                <figure>
+                                    <img src="img/jack.webp" alt="jack" width="70" height="70" loading="lazy">
+                                    <figcaption>JACK EFRON</figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                     </div>
+                </div>
+            </div>
+        </div>
+        <section class="teams" id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-4 col-t-6 col-p-12">
+                        <h2>Our Teams.</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-4 col-p-12">
+                        <div class="member">
+                            <img src="img/member.webp" alt="michael joe" width="170" height="170" loading="lazy">
+                            <div class="social">
+                                <ul class="flex">
+                                    <li><a href=""><span class="fa fa-twitter"></span></a></li>
+                                    <li><a href=""><span class="fa fa-facebook"></span></a></li>
+                                    <li><a href=""><span class="fa fa-instagram"></span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="member-details">
+                            <h3>Michael Joe</h3>
+                            <small>CEO & Founder</small>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, dicta. Eum qui facilis ipsum, id culpa non maxime similique velit quos repellendus exercitationem deserunt ex nobis quam autem in! Fugit!</p>
+                        </div>
+                    </div>
+                    <div class="col-4 col-p-12">
+                        <div class="member">
+                            <img src="img/member.webp" alt="Jeremy Scott" width="170" height="170" loading="lazy">
+                            <div class="social">
+                                <ul class="flex">
+                                    <li><a href=""><span class="fa fa-twitter"></span></a></li>
+                                    <li><a href=""><span class="fa fa-facebook"></span></a></li>
+                                    <li><a href=""><span class="fa fa-instagram"></span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="member-details">
+                            <h3>Jeremy Scott</h3>
+                            <small>Designer</small>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, dicta. Eum qui facilis ipsum, id culpa non maxime similique velit quos repellendus exercitationem deserunt ex nobis quam autem in! Fugit!</p>
+                        </div>
+                    </div>
+                    <div class="col-4 col-p-12">
+                        <div class="member">
+                            <img src="img/member.webp" alt="justin west" width="170" height="170" loading="lazy">
+                            <div class="social">
+                                <ul class="flex">
+                                    <li><a href=""><span class="fa fa-twitter"></span></a></li>
+                                    <li><a href=""><span class="fa fa-facebook"></span></a></li>
+                                    <li><a href=""><span class="fa fa-instagram"></span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="member-details">
+                            <h3>Justin West</h3>
+                            <small>Manager</small>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, dicta. Eum qui facilis ipsum, id culpa non maxime similique velit quos repellendus exercitationem deserunt ex nobis quam autem in! Fugit!</p>
+                        </div>
+                    </div>
+                    <div class="col-4 col-p-12 hidden">
+                        <div class="member">
+                            <img src="img/member.webp" alt="justin west" width="170" height="170" loading="lazy">
+                            <div class="social">
+                                <ul class="flex">
+                                    <li><a href=""><span class="fa fa-twitter"></span></a></li>
+                                    <li><a href=""><span class="fa fa-facebook"></span></a></li>
+                                    <li><a href=""><span class="fa fa-instagram"></span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="member-details">
+                            <h3>Justin West</h3>
+                            <small>Manager</small>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, dicta. Eum qui facilis ipsum, id culpa non maxime similique velit quos repellendus exercitationem deserunt ex nobis quam autem in! Fugit!</p>
+                        </div>
+                    </div>
+                    <div class="col-4 col-p-12 hidden">
+                        <div class="member">
+                            <img src="img/member.webp" alt="justin west" width="170" height="170" loading="lazy">
+                            <div class="social">
+                                <ul class="flex">
+                                    <li><a href=""><span class="fa fa-twitter"></span></a></li>
+                                    <li><a href=""><span class="fa fa-facebook"></span></a></li>
+                                    <li><a href=""><span class="fa fa-instagram"></span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="member-details">
+                            <h3>Justin West</h3>
+                            <small>Manager</small>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, dicta. Eum qui facilis ipsum, id culpa non maxime similique velit quos repellendus exercitationem deserunt ex nobis quam autem in! Fugit!</p>
+                        </div>
+                    </div>
+                    <div class="col-4 col-p-12 hidden">
+                        <div class="member">
+                            <img src="img/member.webp" alt="justin west" width="170" height="170" loading="lazy">
+                            <div class="social">
+                                <ul class="flex">
+                                    <li><a href=""><span class="fa fa-twitter"></span></a></li>
+                                    <li><a href=""><span class="fa fa-facebook"></span></a></li>
+                                    <li><a href=""><span class="fa fa-instagram"></span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="member-details">
+                            <h3>Justin West</h3>
+                            <small>Manager</small>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, dicta. Eum qui facilis ipsum, id culpa non maxime similique velit quos repellendus exercitationem deserunt ex nobis quam autem in! Fugit!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="plus-btn-container"><button class="plus-btn"><span class="fa fa-plus-circle"></span></button></div>
+            </div>
+        </section>
+        <div class="achievements" id="achievements">
+            <div class="container">
+                <div class="row">
+                    <div class="col-3 col-t-6">
+                        <span class="fa fa-gift"></span>
+                        <p>2009</p>
+                        <b>Perispiciatis</b>
+                    </div>
+                    <div class="col-3 col-t-6">
+                        <span class="fa fa-comments-o"></span>
+                        <p>13,562</p>
+                        <b>Comments</b>
+                    </div>
+                    <div class="col-3 col-t-6">
+                        <span class="fa fa-coffee"></span>
+                        <p>8,710</p>
+                        <b>Coffee Cups</b>
+                    </div>
+                    <div class="col-3 col-t-6">
+                        <span class="fa fa-trophy"></span>
+                        <p>715</p>
+                        <b>Awards</b>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="skills">
+            <div class="container">
+                <div class="row">
+                    <div class="col-4 col-t-6 col-p-12">
+                        <h2>Our Skills.</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-8 col-p-12">
+                        <div class="row">
+                            <div class="col-3 col-p-6"><canvas width="170" height="170"></canvas></div>
+                            <div class="col-3 col-p-6"><canvas width="170" height="170"></canvas></div>
+                            <div class="col-3 col-p-6"><canvas width="170" height="170"></canvas></div>
+                            <div class="col-3 col-p-6"><canvas width="170" height="170"></canvas></div>
+                        </div>
+                        <div class="skill-description">
+                            <h3>Something about our skills</h3>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta quam placeat unde praesentium tempora rerum, suscipit iure assumenda nesciunt qui quaerat ipsum et, debitis, quos aperiam odio quae possimus! Repellat. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non corrupti pariatur omnis eaque tempora saepe labore ad harum et autem, at ipsa provident sapiente sunt ipsum officiis nostrum quae animi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt mollitia qui modi rem doloremque provident beatae, suscipit exercitationem velit sed officiis temporibus ducimus error odit tempore? Corporis a architecto cumque!</p>
+                        </div>
+                    </div>
+                    <div class="col-4 col-t-12">
+                        <div class="accordian">
+                            <ul>
+                                <li>
+                                    <a href="">
+                                        <span class="fa fa-rocket"></span>
+                                        Lorem ipsum dolor sit amet.
+                                    </a>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero laudantium ipsa eum odit, aut officia cupiditate quaerat nisi dolorem autem neque omnis impedit repudiandae nihil blanditiis itaque quibusdam illo beatae!
+                                    </p>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <span class="fa fa-unlock"></span>
+                                        Lorem ipsum dolor sit amet.
+                                    </a>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero laudantium ipsa eum odit, aut officia cupiditate quaerat nisi dolorem autem neque omnis impedit repudiandae nihil blanditiis itaque quibusdam illo beatae!
+                                    </p>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <span class="fa fa-map-marker"></span>
+                                        Lorem ipsum dolor sit amet.
+                                    </a>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero laudantium ipsa eum odit, aut officia cupiditate quaerat nisi dolorem autem neque omnis impedit repudiandae nihil blanditiis itaque quibusdam illo beatae!
+                                    </p>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <span class="fa fa-phone"></span>
+                                        Lorem ipsum dolor sit amet.
+                                    </a>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero laudantium ipsa eum odit, aut officia cupiditate quaerat nisi dolorem autem neque omnis impedit repudiandae nihil blanditiis itaque quibusdam illo beatae!
+                                    </p>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <span class="fa fa-book"></span>
+                                        Lorem ipsum dolor sit amet.
+                                    </a>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero laudantium ipsa eum odit, aut officia cupiditate quaerat nisi dolorem autem neque omnis impedit repudiandae nihil blanditiis itaque quibusdam illo beatae!
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="subscribe">
+            <div class="container">
+                <div class="row">
+                    <div class="col-3 col-t-1"></div>
+                    <div class="col-6 col-t-10 col-p-12">
+                        <form class="flex align-center justify-space-between">
+                            <input type="email" placeholder="Enter your e-mail here..." required>
+                            <button type="submit">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="partners">
+            <div class="container">
+                <div class="row">
+                    <div class="col-1 col-t-hide"></div>
+                    <div class="col-2 col-t-auto col-p-6"><div class="box"><span class="fa fa-wordpress"> Wordpress</span></div></div>
+                    <div class="col-2 col-t-auto col-p-6"><div class="box"><span class="fa fa-wordpress"> Wordpress</span></div></div>
+                    <div class="col-2 col-t-auto col-p-6"><div class="box"><span class="fa fa-wordpress"> Wordpress</span></div></div>
+                    <div class="col-2 col-t-auto col-p-6"><div class="box"><span class="fa fa-wordpress"> Wordpress</span></div></div>
+                    <div class="col-2 col-t-auto col-p-6"><div class="box"><span class="fa fa-wordpress"> Wordpress</span></div></div>
+                </div>
+            </div>
+        </div>
+        <section class="contact" id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="col-4 col-t-6 col-p-12">
+                        <h2>Contact Us.</h2>
+                        <address>123A Building, Road Street, Orlando District, US <br>
+                            <a href="tel:+0123456789">+01 234 567 89</a> | <a href="mailto:contact@book.com">contact@book.com</a>
+                        </address>
+                        <div class="social">
+                            <span class="fa fa-twitter"></span>
+                            <span class="fa fa-facebook"></span>
+                            <span class="fa fa-instagram"></span>
+                            <span class="fa fa-youtube"></span>
+                            <span class="fa fa-skype"></span>
+                            <span class="fa fa-pinterest"></span>
+                            <span class="fa fa-globe"></span>
+                        </div>
+                    </div>
+                </div>
+                <form class="row">
+                    <div class="col-4 col-t-6 col-p-12"><label><span class="fa fa-envelope"></span> Email<input type="email"></label></div>
+                    <div class="col-4 col-t-6 col-p-12"><label><span class="fa fa-user"></span> Name<input type="text"></label></div>
+                    <div class="col-8 col-t-12"><label><span class="fa fa-pencil"></span> Message<textarea></textarea></label></div>
+                    <div class="col-4 col-t-12"><button type="submit"><span class="fa fa-check-circle-o"></span> Submit</button></div>
+                </form>
+            </div>
+        </section>
+        <footer>
+            <b>IDDO</b>
+            <p>&copy; 2014 IDDO. All rights reserved.</p>
+            <p>Designed by Aditya</p>
+            <a href="#home"><span class="fa fa-chevron-up"></span></a>
+        </footer>
+        
+        <!-- JQuery integration -->
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.17/jquery.bxslider.min.js"></script>
+
+        <!-- Javascript -->
+         <script src="./js/script.js"></script>
+    </body>
+</html>
